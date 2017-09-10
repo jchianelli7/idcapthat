@@ -599,7 +599,8 @@ h1, h2, h3, h4, h5, h6 {
 ======================*/
 
 #services {
-  background-image: url("../images/services/service-bg.jpg");
+  /*background-image: url("../images/services/service-bg.jpg");*/
+background-image: url("../images/services/svc-bg.JPG");
   color:#fff;
   text-align:center;
   background-color:	#0A0A13;
