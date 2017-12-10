@@ -6,11 +6,9 @@ $website=$_POST['url'];
 $message=$_POST['message'];
 
 	
-    $SpamErrorMessage = "No Websites URLs permitted";
-
-	if(preg_match("/http/i","$name"))(echo "$SpamErrorMessage"; exit())
-	if(preg_match("/http/i","$Email"))(echo "$SpamErrorMessage"; exit())
-	if(preg_match("/http/i","$message"))(echo "$SpamErrorMessage"; exit())
+   if ( preg_match( "/[\r\n]/", $name ) || preg_match( "/[\r\n]/", $Email ) ) {
+	   exit();
+   }
 				
     $body .= "Name: " . $name . "\n"; 
     $body .= "Email: " . $Email . "\n"; 
